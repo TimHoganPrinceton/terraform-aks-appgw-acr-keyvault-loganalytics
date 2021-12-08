@@ -1,9 +1,9 @@
 #--------------------------------------------------------------
 # General
 #--------------------------------------------------------------
-app_name = "your-name"
-location = "westeurope"
-domain_name_label = ""
+app_name = "winehouse"
+location = "eastus"
+domain_name_label = "wino"
 
 #--------------------------------------------------------------
 # AKS configuration params

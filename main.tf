@@ -37,7 +37,8 @@ module "kv_secret_docker_password" {
   value        = module.acr.registry_password
   key_vault_id = module.keyvault.key_vault_id
 
-  depends_on = [module.keyvault.azurerm_key_vault_access_policy]
+//  depends_on = [module.keyvault.azurerm_key_vault_access_policy]
+  depends_on = [module.keyvault.key_vault_default_access_policy_id]
 }
 
 module "kv_secret_docker_username" {
@@ -47,7 +48,8 @@ module "kv_secret_docker_username" {
   value        = module.acr.registry_username
   key_vault_id = module.keyvault.key_vault_id
 
-  depends_on = [module.keyvault.azurerm_key_vault_access_policy]
+//  depends_on = [module.keyvault.azurerm_key_vault_access_policy]
+  depends_on = [module.keyvault.key_vault_default_access_policy_id]
 }
 
 # Create virtual network
